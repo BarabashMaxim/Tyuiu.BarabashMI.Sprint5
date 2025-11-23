@@ -8,7 +8,7 @@ namespace Tyuiu.BarabashMI.Sprint5.Task0.V15.Test
         [TestMethod]
         public void TestMethod1()
         {
-            //string path = $@"E:\.solution\Tyuiu.BarabashMI.Sprint5\Tyuiu.BarabashMI.Sprint5.Task0.V15.Lib\bin\Debug\net8.0\OutPutFileTask0.txt";
+            
             DataService ds = new DataService();
             int x = 3;
             string path = ds.SaveToFileTextData(x);
