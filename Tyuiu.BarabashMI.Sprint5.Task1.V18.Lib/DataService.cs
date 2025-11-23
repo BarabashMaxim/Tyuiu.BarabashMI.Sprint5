@@ -20,7 +20,7 @@ namespace Tyuiu.BarabashMI.Sprint5.Task1.V18.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = 3 * x + 2 - (2 * x - x) / (Math.Cos(x) + 1);
+                y = Math.Round(3 * x + 2 - (2 * x - x) / (Math.Cos(x) + 1),2);
                 stry = Convert.ToString(y);
 
                 if (x != stopValue)
