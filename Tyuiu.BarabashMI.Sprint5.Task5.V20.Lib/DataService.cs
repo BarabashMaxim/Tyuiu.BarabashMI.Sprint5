@@ -11,7 +11,7 @@ namespace Tyuiu.BarabashMI.Sprint5.Task5.V20.Lib
                 NumberDecimalSeparator = "."
             };
             string strX = File.ReadAllText(path);
-            string[] strings = strX.Split(",");
+            string[] strings = strX.Split(" ");
             List<int> numbers = new List<int>();
             foreach (string str in strings)
             {
