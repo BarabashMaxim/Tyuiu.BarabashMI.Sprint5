@@ -12,10 +12,11 @@ namespace Tyuiu.BarabashMI.Sprint5.Task7.V1.Lib
                 File.Delete(pathh);
 
             string strX = File.ReadAllText(path);
+            string res = "";
             foreach (char c in strX)
-            { 
-                if (char.IsDigit(c))
-                    strX = strX.Remove(c);
+            {
+                if (!char.IsDigit(c))
+                    res += c;
             }
             
             File.WriteAllText(pathh, strX);
