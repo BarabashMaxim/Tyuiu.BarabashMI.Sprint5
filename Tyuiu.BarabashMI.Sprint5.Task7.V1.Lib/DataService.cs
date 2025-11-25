@@ -18,7 +18,7 @@ namespace Tyuiu.BarabashMI.Sprint5.Task7.V1.Lib
                 if (!char.IsDigit(c))
                     res += c;
             }
-            while (res[res.Length-1]==' ')
+            while (res[res.Length-1]==' ' | res[res.Length - 1] == '.')
                 res = res.Substring(0, res.Length-1);
             File.WriteAllText(pathh, res);
             return pathh;
