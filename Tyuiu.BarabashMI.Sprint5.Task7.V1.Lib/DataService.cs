@@ -19,7 +19,7 @@ namespace Tyuiu.BarabashMI.Sprint5.Task7.V1.Lib
                     res += c;
             }
             
-            File.WriteAllText(pathh, strX);
+            File.WriteAllText(pathh, res);
             return pathh;
             
         }
